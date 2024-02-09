@@ -1,0 +1,312 @@
+/* Removing Default Css */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*************** Removing Default CSS ***************/
+
+#container {
+  display: flex;
+}
+
+/* image - Section */
+@font-face {
+  font-family: norse-bold;
+  src: url(./fonts/Norse-Bold.otf);
+}
+
+.logo-container {
+  background-color: black;
+  color: white;
+  opacity: 70%;
+  height: 200px;
+  margin-top: 15rem;
+  font-weight: bolder;
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: norse-bold, sans-serif, "Times New Roman", Times, serif;
+}
+
+#image-section {
+  background-image: url(./Images/hero-image.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer {
+  text-align: center;
+  color: white;
+}
+footer a {
+  text-decoration: underline;
+  color: white;
+}
+
+/************************ Form section ******************/
+.quote-container {
+  background-color: #f9fafb;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding-left: 3rem;
+  padding-right: 5em;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.form-container {
+  padding-left: 3rem;
+  margin-top: 0px;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+
+  border: 1px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* label {
+  display: inline-block;
+} */
+legend {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+input {
+  margin-bottom: 15px;
+  width: 300px;
+  height: 25px;
+  font-size: 18px;
+  padding: 5px;
+  border: 2px solid rgb(212, 212, 212);
+  border-radius: 5px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus {
+  outline: none;
+  border: 2px solid blue;
+}
+section {
+  display: flex;
+  gap: 30px;
+}
+.main-form {
+  max-width: 620px;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  gap: 20px;
+  padding: 0 0 20px 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(51, 51, 51);
+  text-shadow: 0 2px 10px rgba(100, 100, 100, 0.5);
+}
+label {
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+.invalid:invalid {
+  outline: none;
+  border: 2px solid red;
+  background-color: rgba(255, 0, 0, 0.11);
+}
+
+.createAccount {
+  margin: 40px 0 10px 80px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #3a55ee;
+  color: #f9faf8;
+  border: none;
+  border-radius: 5px;
+  width: 210px;
+  height: 45px;
+}
+
+.createAccount:hover {
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2),
+    0 5px 5px 0 rgba(0, 0, 0, 0.1);
+
+  -moz-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2),
+    0 5px 5px 0 rgba(0, 0, 0, 0.1);
+
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.createAccount:active {
+  background-color: #416baa;
+
+  -webkit-box-shadow: inset 0 0 20px 5px #3a55ee, 0 3px 5px 0 rgba(0, 0, 0, 0.2),
+    0 3px 5px 0 rgba(0, 0, 0, 0.1);
+
+  -moz-box-shadow: inset 0 0 20px 5px #3a55ee, 0 3px 5px 0 rgba(0, 0, 0, 0.2),
+    0 3px 5px 0 rgba(0, 0, 0, 0.1);
+
+  box-shadow: inset 0 0 20px 5px #3a55ee, 0 3px 5px 0 rgba(0, 0, 0, 0.2),
+    0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.account {
+  margin-left: 80px;
+}
+
+.login {
+  font-size: 18px;
+  font-weight: 600;
+  color: #3a55ee;
+  text-decoration: none;
+}
+
+.login:hover {
+  cursor: pointer;
+}
+
+.login:active {
+  color: #416baa;
+}
+p {
+  margin-top: 20px;
+  margin-left: 65px;
+  font-size: 20px;
+}
